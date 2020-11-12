@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <style>
+        body {
+            background-color: rgb(223 169 169);
+        }
+
+        h1,
+        h3,
+        #para {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+            font-family: serif;
+            font-stretch: extra-condensed;
+            color: red;
+            text-transform: uppercase;
+        }
+
+        h3,
+        #para {
+            font-size: 20px;
+        }
+
+        .container {
+            text-align: center;
+            border: 2px solid red;
+            width: auto;
+            border-radius: 20px;
+            background: url("love.jpg") no-repeat center center/cover;
+        }
+
+        input {
+            margin: 40px;
+            height: 35px;
+            font-weight: bolder;
+            outline: none;
+            border-radius: 11px;
+            color: rgb(38, 27, 27);
+            background-color: #df7e7ea1;
+        }
+
+        #btn {
+            height: 35px;
+            width: 100px;
+            font-weight: bolder;
+            color: #e5ad0e;
+            outline: none;
+            background-color: #26601e;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Love Calculator</h1>
+    <h3>Check The How Many Percent You Loves Someone Or Someone Loves You How Many!!!!!!!!!!!!</h3>
+    <div class="container">
+        <h1 style="color: red;">Calculate Your Love</h1>
+        <input type="text" id="first" placeholder="Enter your Name...">
+        <input type="text" id="second" placeholder="Enter Someone's Name...">
+        <br>
+        <button type="submit" id="btn" onclick="showLove()">Enter</button>
+        <p id="para"> </p>
+    </div>
+
+
+    <script>
+        function showLove() {
+            var first = document.getElementById("first").value;
+            var second = document.getElementById("second").value;
+            var num = Math.floor(Math.random() * 101);
+            if ((first != "") && (second != "")) {
+                var para = document.getElementById("para").innerHTML = first + " LOVES " + second + " = " + num + "%" + "<br>" +"<h3>Have a Nice Day</h3>";
+                
+            }
+            else {
+                alert('as kaskay chalel??? kahitari nav tr takav lagel na......');
+            }
+        }
+    </script>
+</body>
+
+</html>
