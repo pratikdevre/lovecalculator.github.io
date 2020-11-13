@@ -76,8 +76,12 @@
             var second = document.getElementById("second").value;
             var num = Math.floor(Math.random() * 101);
             if ((first != "") && (second != "")) {
-                var para = document.getElementById("para").innerHTML = first + " LOVES " + second + " = " + num + "%" + "<br>" +"<h3>Have a Nice Day</h3>";
-                
+
+                if (((first =="prathamesh")||(first =="sonu")) && ((second =="mitali")||(second =="Mitali"))) {
+                    document.getElementById("para").innerHTML = "Are sod re bhau ticha nad kay yaar tu pn bs kr na ata kadhicha tine tula msg kela nahiye na" + "<br>" +"<h3>Have a Nice Day</h3>";
+                }
+                else{
+                var para = document.getElementById("para").innerHTML = first + " LOVES " + second + " = " + num + "%" + "<br>" +"<h3>Have a Nice Day</h3>";}
             }
             else {
                 alert('as kaskay chalel??? kahitari nav tr takav lagel na......');
